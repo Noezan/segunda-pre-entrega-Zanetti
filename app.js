@@ -32,7 +32,7 @@ function menu() {
         }
 
         cantidad = parseInt(prompt("Ingrese la cantidad"));
-        validacion(cantidad);
+        cantidad = validacion(cantidad);
 
         carrito.push (new itemCompra(productos[eleccion-1].nombre,cantidad,productos[eleccion-1].precio));
         console.log(carrito);
